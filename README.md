@@ -15,4 +15,4 @@ da1ight microservices repository
 
 Задание со *
 Разница между контейнером и имиджем описана в файле dockermonolith/docker-1.log
- 
+
