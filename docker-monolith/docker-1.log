@@ -1,0 +1,7 @@
+REPOSITORY                TAG                 IMAGE ID            CREATED              SIZE
+da1ight/ubuntu-tmp-file   latest              16fb2b1a2cdb        About a minute ago   63.2MB
+ubuntu                    18.04               56def654ec22        4 weeks ago          63.2MB
+
+Разница между имиджем и контейнером на основе docker inspect:
+Отсутвует все что намекает на активную работу (state, информация о выделенных ресурсах cpu/mem, networking).
+То есть имидж статичен, а контейнер изменяется пока он запущен.
