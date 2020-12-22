@@ -3,12 +3,6 @@ stages:
   - test
   - deploy
 
-variables:
-  DATABASE_URL: 'mongodb://mongo/user_posts'
-before_script:
-  - cd reddit
-  - bundle install
-
 build_job:
   stage: build
   script:
@@ -16,8 +10,14 @@ build_job:
 
 test_unit_job:
   stage: test
+  image: ruby:2.4.2
+  variables:
+    DATABASE_URL: 'mongodb://mongo/user_posts'
   services:
     - mongo:latest
+  before_script:
+    - cd reddit
+    - bundle install
   script:
     - ruby simpletest.rb
 
