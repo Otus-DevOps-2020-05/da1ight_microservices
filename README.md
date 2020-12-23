@@ -63,3 +63,12 @@ mongo                 latest              ef5c2207766e        4 days ago        
 
 Задание со (**) \
 Создан файл docker-compose.override.yml, позволяющий запускать puma для руби приложений в дебаг режиме с двумя воркерами (флаги --debug и -w 2)
+
+Домашнее задание №14
+
+Cоздана YC-виртуальная машина gitlab-ci-vm с помощью web консоли
+Установлен docker-compose на ВМ через docker-machine \
+```docker-machine create --driver generic --generic-ip-address=130.193.35.37 --generic-ssh-user ubuntu --generic-ssh-key ~/.ssh/keys/yc gitlab-ci``` \
+Запущен gitlab в docker-контейнере, запущен контейнер с gitlub-runner и регистрируем его. 
+Описаны этапы пайплайна для приложения 
+Определены окружения
